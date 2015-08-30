@@ -1,0 +1,6 @@
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\bin\Debug\OnlineClothingStore.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\bin\Debug\OnlineClothingStore.exe
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\bin\Debug\OnlineClothingStore.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.exe
+c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.pdb
