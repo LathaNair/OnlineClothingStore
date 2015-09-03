@@ -8,6 +8,13 @@ namespace OnlineClothingStore
 {
     class OrderDetails
     {
+        public enum TypeOrderStauts
+        {
+            Ordered,
+            Shipped,
+            Delivered
+        }
+
         #region OrderProperties
         /// <summary>
         /// Order ID
@@ -25,12 +32,13 @@ namespace OnlineClothingStore
         /// <summary>
         /// Shipping status
         /// </summary>
-        public string OrderStatus { get; set; }
+        public TypeOrderStauts OrderStatus { get; set; }
         #endregion
 
         #region OrderMethods
+        
         /// <summary>
-        /// % promotion discount provided by seller
+        /// % promotion discount provided by retailer
         /// Reduce the price of prduct based on promotion %
         /// return the new price after discount 
         /// </summary>

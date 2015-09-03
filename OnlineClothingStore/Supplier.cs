@@ -29,17 +29,7 @@ namespace OnlineClothingStore
         #endregion
 
         #region SupplierMethods
-        /// <summary>
-        /// Add inventory
-        /// Increase current inventory and return the updated inventory
-        /// </summary>
-        /// <param name="addstock"></param>
-        /// <returns></returns>
-        public int AddInventory(int addinventory)
-        {
-            Inventory += addinventory;
-            return Inventory;
-        }
+     
         #endregion
     }
 }

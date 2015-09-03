@@ -4,3 +4,6 @@ c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore
 c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\bin\Debug\OnlineClothingStore.pdb
 c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.exe
 c:\users\administrator\documents\visual studio 2015\Projects\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.pdb
+C:\Users\Administrator\Documents\GitHub\OnlineClothingStore\OnlineClothingStore\bin\Debug\OnlineClothingStore.exe.config
+C:\Users\Administrator\Documents\GitHub\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.exe
+C:\Users\Administrator\Documents\GitHub\OnlineClothingStore\OnlineClothingStore\obj\Debug\OnlineClothingStore.pdb

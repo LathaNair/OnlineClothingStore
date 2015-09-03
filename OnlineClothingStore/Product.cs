@@ -8,6 +8,45 @@ namespace OnlineClothingStore
 {
     class Product
     {
+
+        public enum TypeCategory
+        {
+            Men,
+            Women,
+            Kids
+        }
+
+        public enum TypeSubCategory
+        {
+            Activewear,
+            Jeans,
+            TShirts,
+            Dresses,
+            Shorts,
+            Skirts
+        }
+
+        public enum TypeSize
+        {
+            XLarge,
+            Large,
+            Medium,
+            Small,
+            XSmall
+        }
+
+        public enum TypeColor
+        {
+            Black,
+            White,
+            Red,
+            Yellow,
+            Blue,
+            Grey,
+            Pink,
+            Orange
+        }
+
         #region ProductVariables
         private static int lastProdctID = 1000;
         #endregion
@@ -26,19 +65,24 @@ namespace OnlineClothingStore
         /// </summary>
         public string ProductDesc { get; private set; }
         /// <summary>
-        /// Catogory of product
+        ///Category of product
+        /// like Men,Women,kids
+        /// </summary>
+        public TypeCategory Category { get; private set; }
+        /// <summary>
+        ///Subcategory of product
         /// like T-shirt, dress, etc.
         /// </summary>
-        public string Category { get; private set; }
+        public TypeSubCategory SubCategory { get; private set; }
         /// <summary>
         /// Product size
         /// 'L','S','M' etc.
         /// </summary>
-        public string Size { get; private set; }
+        public TypeSize Size { get; private set; }
         /// <summary>
         /// Color of the product
         /// </summary>
-        public string Color { get; private set; }
+        public TypeColor Color { get; private set; }
         /// <summary>
         /// Stock for a product
         /// </summary>
@@ -63,17 +107,6 @@ namespace OnlineClothingStore
         }*/
 
        
-        /// <summary>
-        /// Sell certain quantity of product
-        /// reduce the stock accordingly
-        /// </summary>
-        /// <param name="sale"></param>
-        /// <returns></returns>
-        public int SellStock(int order)
-        {
-            Stock -= order; 
-            return order;
-        }
         #endregion
 
         #region ProductConstructors
