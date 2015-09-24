@@ -8,7 +8,7 @@ namespace OnlineClothingStore
 {
     class Product
     {
-
+        #region ProductEnum
         public enum TypeCategory
         {
             Men,
@@ -46,7 +46,7 @@ namespace OnlineClothingStore
             Pink,
             Orange
         }
-
+        #endregion
         #region ProductVariables
         private static int lastProdctID = 1000;
         #endregion
@@ -55,7 +55,7 @@ namespace OnlineClothingStore
         /// <summary>
         /// Name of the product
         /// </summary>
-        public string ProductName { get; private set; }
+        public string ProductName { get; set; }
         /// <summary>
         /// Customer ID number
         /// </summary>
@@ -63,34 +63,34 @@ namespace OnlineClothingStore
         /// <summary>
         /// Product description
         /// </summary>
-        public string ProductDesc { get; private set; }
+        public string ProductDesc { get; set; }
         /// <summary>
         ///Category of product
         /// like Men,Women,kids
         /// </summary>
-        public TypeCategory Category { get; private set; }
+        public TypeCategory Category { get;  set; }
         /// <summary>
         ///Subcategory of product
         /// like T-shirt, dress, etc.
         /// </summary>
-        public TypeSubCategory SubCategory { get; private set; }
+        public TypeSubCategory SubCategory { get;  set; }
         /// <summary>
         /// Product size
         /// 'L','S','M' etc.
         /// </summary>
-        public TypeSize Size { get; private set; }
+        public TypeSize Size { get; set; }
         /// <summary>
         /// Color of the product
         /// </summary>
-        public TypeColor Color { get; private set; }
+        public TypeColor Color { get; set; }
         /// <summary>
         /// Stock for a product
         /// </summary>
-        public int Stock { get; private set; }
+        public int Stock { get; set; }
         /// <summary>
         /// Price of the product
         /// </summary>
-        public double Price { get; private set; }
+        public double Price { get; set; }
         #endregion
 
         #region ProductMethods
@@ -110,9 +110,10 @@ namespace OnlineClothingStore
         #endregion
 
         #region ProductConstructors
-        public Product()
+        public Product(string prodname)
         {
             ProductID = ++lastProdctID;
+            ProductName = prodname;
         }
 
         #endregion

@@ -8,6 +8,15 @@ namespace OnlineClothingStore
 {
     class Customer
     {
+        #region CustomerEnum
+        
+        public enum TypeofCard
+        {
+            CreditCard,
+            DebitCard
+        }
+        #endregion 
+
 
         #region CustomerVariables
 
@@ -34,20 +43,20 @@ namespace OnlineClothingStore
         /// </summary>
         public string ShippingAddressLine1 { get; set; }
         public string ShippingAddressLine2 { get; set; }
-        public int ShippingAddressZipCode { get; set; }
+        public string ShippingAddressZipCode { get; set; }
 
         /// <summary>
         /// Billing address of the customer
         /// </summary>
         public string BillingAddressLine1 { get; set; }
         public string BillingAddressLine2 { get; set; }
-        public int BillingAddressZipCode { get; set; }
+        public string BillingAddressZipCode { get; set; }
 
         /// <summary>
         /// Card type
         /// Debit or Credit
         /// </summary>
-        public string CardType { get; set; }
+        public TypeofCard CardType { get; set; }
         /// <summary>
         /// Card number
         /// </summary>
@@ -56,9 +65,10 @@ namespace OnlineClothingStore
 
         #region CustomerConstructor
 
-        public Customer()
+        public Customer(string custname)
         {
             CustomerID = ++lastCustomerId;
+            CustomerName = custname;
         }
 
         #endregion
