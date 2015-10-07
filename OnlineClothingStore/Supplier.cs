@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineClothingStore
 {
-    class Supplier
+    public class Supplier
     {
 
         #region SupplierProperties

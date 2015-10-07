@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OnlineClothingStore
 {
-    class Customer
+    public class Customer
     {
         #region CustomerEnum
         
@@ -32,6 +33,7 @@ namespace OnlineClothingStore
         /// <summary>
         /// Customer ID
         /// </summary>
+        [Key]
         public int CustomerID { get; private set; }
         /// <summary>
         /// Customer email id

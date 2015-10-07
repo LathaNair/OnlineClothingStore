@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OnlineClothingStore
 {
-    class Product
+    public class Product
     {
         #region ProductEnum
         public enum TypeCategory
@@ -59,6 +60,8 @@ namespace OnlineClothingStore
         /// <summary>
         /// Customer ID number
         /// </summary>
+         
+        [Key]
         public int ProductID { get; private set; }
         /// <summary>
         /// Product description
@@ -91,6 +94,8 @@ namespace OnlineClothingStore
         /// Price of the product
         /// </summary>
         public double Price { get; set; }
+
+        public Supplier Supp { get; set; }
         #endregion
 
         #region ProductMethods

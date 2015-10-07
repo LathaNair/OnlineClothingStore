@@ -42,13 +42,21 @@ namespace OnlineClothingStore
             Customer ThisCustomer = StoreFactory.CreateCustomer("Lats", "abc@xyz.com", "123 ne 456 place", "##", "1432424321",
                "123 ne 456 place", "##", "1432424321", 1234567890);
 
+            Console.WriteLine("CustomerID: {0}, Name: {1}, Shipping Address: {2} {3} {4}, Billing Address: {5} {6} {7}",
+             ThisCustomer.CustomerID,ThisCustomer.CustomerName,ThisCustomer.ShippingAddressLine1,ThisCustomer.ShippingAddressLine2,
+             ThisCustomer.ShippingAddressZipCode,ThisCustomer.BillingAddressLine1,ThisCustomer.BillingAddressLine2,
+             ThisCustomer.BillingAddressZipCode);
+
             //New Product Item1
             // Product Item1 = new Product();
             // Item1.ProductName = "Graphic Tee";
             // Item1.ProductDesc = "Graphic Tee from Calvin & Hobbes, Colors avaialbe";
 
             Product ThisProduct = StoreFactory.CreateProduct("Graphic Tee", "Graphic Tee from Calvin and Hobbes", 10, 15.00);
-       
+            Console.WriteLine("ProductID: {0}, Name: {1}, Description: {2}, Category: {3}, SubCategory: {4}, Size: {5},Color: {6}, Stock: {7}, Price: {8}",
+                 ThisProduct.ProductID, ThisProduct.ProductName, ThisProduct.ProductDesc,ThisProduct.Category, ThisProduct.SubCategory, ThisProduct.Size,
+                 ThisProduct.Color, ThisProduct.Stock, ThisProduct.Price);
+
         }
     }
 }
