@@ -36,6 +36,11 @@ namespace OnlineClothingStore
         [Key]
         public int CustomerID { get; private set; }
         /// <summary>
+        /// Customer number
+        /// </summary>
+       // public int CustomerNumber { get; private set; }
+
+        /// <summary>         
         /// Customer email id
         /// </summary>
         public string Email { get; set; }
@@ -70,6 +75,7 @@ namespace OnlineClothingStore
         public Customer(string custname)
         {
             CustomerID = ++lastCustomerId;
+          //  CustomerNumber = 10000;
             CustomerName = custname;
         }
 

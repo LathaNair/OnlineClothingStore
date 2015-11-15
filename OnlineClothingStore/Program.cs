@@ -57,6 +57,10 @@ namespace OnlineClothingStore
                  ThisProduct.ProductID, ThisProduct.ProductName, ThisProduct.ProductDesc,ThisProduct.Category, ThisProduct.SubCategory, ThisProduct.Size,
                  ThisProduct.Color, ThisProduct.Stock, ThisProduct.Price);
 
+            Cart ThisCart = StoreFactory.CreateCart(1234, 12, 10009, 2, 15.00);
+            Console.WriteLine("CustomerID: {0}, CartID: {1}, ProdID: {2}, ProdQty: {3}, Price: {4}",
+                 ThisCart.CustomerID, ThisCart.CartID, ThisCart.ProdID, ThisCart.ProdQty, ThisCart.Prodprice, ThisCart.TotalProdPrice);
+
         }
     }
 }

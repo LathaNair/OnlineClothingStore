@@ -72,5 +72,27 @@ namespace OnlineClothingStore
                 return product;
             }
         }
+
+        public static Cart CreateCart(int custid, int cartid, int prodid, int quantity, double price)
+        {
+            try {
+                using (var db = new OnlineStoreModel())
+                {
+                    Cart cart = new Cart();
+                    cart.CustomerID = custid;
+                    cart.CartID = cartid;
+                    cart.ProdID = prodid;
+                    cart.ProdQty = quantity;
+                    cart.Prodprice = price;
+                    db.Carts.Add(cart);
+                    db.SaveChanges();
+                    return cart;
+                }
+            }
+            catch (Exception ex )
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

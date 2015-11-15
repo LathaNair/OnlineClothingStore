@@ -15,6 +15,7 @@ namespace OnlineClothingStore
         public OnlineStoreModel()
             : base("name=OnlineStoreModel")
         {
+            Database.SetInitializer<OnlineStoreModel>(null);
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
@@ -22,6 +23,7 @@ namespace OnlineClothingStore
 
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
     }
